@@ -1,0 +1,9 @@
+name = "{{project-name}}"
+main = "build/index.js"
+compatibility_date = "{{ "now" | date: "%Y-%m-%d" }}"
+
+[build]
+command = "cargo leptos build --release && worker-build --release --features worker"
+
+[assets]
+directory = "./target/site"
