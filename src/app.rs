@@ -50,7 +50,6 @@ pub fn App() -> impl IntoView {
 #[component]
 fn HomePage() -> impl IntoView {
     view! {
-        <h1>"Hello world!"</h1>
         <ShowDataFromApi />
     }
 }
